@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Poppins:100,200,300,400,500,600,700|Playfair+Display:400,400i|Alegreya+Sans+SC|Roboto+Condensed:400,700|Noto+Serif+TC:300|Libre+Franklin:300,400,500,600,700" rel="stylesheet">
+  <title>Customize your card</title>
+  </head>
+  <body>
+    
+    <div id = "container">
+    
+    <div id = "panel">
+    <div id = "panel_header">
+      <h2>Choose your style</h2>
+      <div id = "panel_navigation">
+        <div id="classic_button"><a href ="#">Classic</a></div>
+        <div id="bohemian_button"><a href ="#">Bohemian</a></div>
+        <div id="modern_button"><a href ="#">Modern</a></div>
+      </div>
+    </div>
+    <div id = "panel_options">
+      <h2>Enter your event details</h2>
+      <form>
+      <input id = "name1_input" placeholder ="Your name">
+      <input id = "name2_input" placeholder ="Your spouse's name">
+      <input type="datetime-local" id = "time_date_input" onchange="onDateChange(event)" placeholder = "Date & Time">
+      <input type="textarea" id = "location_input" placeholder = "Location">
+  
+      </form>
+    </div> 
+    </div>
+    
+    <div id = "card">
+      <div class = "card_canvas">
+        
+        <div id = "card_data">
+        <span data="intro" class="intro">Join us for the marriage of</span>
+        <span data="name1_output" class="name1_output">Your name</span>
+        <span data="ampersand" class="ampersand">&</span>
+        <span data="name2_output" class="name2_output">Spouse name</span>
+        <span data="on" class="on">on</span>
+        <span data="time_date_output" class="time_date_output">Date & Time</span>
+        <span data="at" class="at">at</span>
+        <span data="location_output" class="location_output">Location</span>
+        </div>
+
+      </div>
+    </div>
+    
+    </div>
+    
+  
+  <script src="./index.js"></script>  
+  </body>
+</html>
