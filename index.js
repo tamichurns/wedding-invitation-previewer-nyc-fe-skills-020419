@@ -1,15 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-  canvas.classList.add('classic')
-  name1Output.classList.add('classic_headline')
-  ampersand.classList.add('classic_headline')
-  name2Output.classList.add('classic_headline')
-  intro.classList.add('classic_preset_copy')
-  on.classList.add('classic_preset_copy')
-  at.classList.add('classic_preset_copy')
-  timeDateOutput.classList.add('classic_date_location')
-  locationOutput.classList.add('classic_date_location')
-});
-  
 const name1Input = document.getElementById('name1_input')
 const name2Input = document.getElementById('name2_input')
 const timeDateInput = document.getElementById('time_date_input')
@@ -24,6 +12,21 @@ const on = document.querySelector('.on')
 const at = document.querySelector('.at')
 const timeDateOutput = document.querySelector('.time_date_output')
 const locationOutput = document.querySelector('.location_output')
+const card = document.getElementById('card')
+
+document.addEventListener("DOMContentLoaded", () => {
+  canvas.classList.add('classic')
+  name1Output.classList.add('classic_headline')
+  ampersand.classList.add('classic_headline')
+  name2Output.classList.add('classic_headline')
+  intro.classList.add('classic_preset_copy')
+  on.classList.add('classic_preset_copy')
+  at.classList.add('classic_preset_copy')
+  timeDateOutput.classList.add('classic_date_location')
+  locationOutput.classList.add('classic_date_location')
+});
+  
+
 
 // format date & time //
 
@@ -51,6 +54,7 @@ locationInput.addEventListener('keyup', (onKeyUp) => {
 // Change styles // 
 
 document.getElementById('classic_button').onclick = function(event) {
+  canvas.classList.add('classic')
   canvas.classList.remove('bohemian','modern')
   canvas.classList.add('classic')
   name1Output.classList.remove('bohemian_headline','modern_headline')
