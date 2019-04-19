@@ -361,6 +361,8 @@ h2 {
 /*responsive states*/
 @media only screen and (max-width: 800px) {
   
+
+  
 form {
   width: 95%;
 }
